@@ -44,12 +44,12 @@ public class ExtentReportTest {
 	  htmlreportloc=new ExtentSparkReporter("C:\\SeleniumDrivers\\data\\MyReport.html");
 	  //create ExtentReports class
 	  report=new ExtentReports();
-	  report.attachReporter(htmlreportloc);
+	  report.attachReporter(htmlreportloc);    
 	  //to beautfy the report
 	  htmlreportloc.config().setTheme(Theme.DARK);
 	  
 	  //launching an appln
-			System.setProperty("webdriver.chrome.driver", "C:\\Users\\Ramrajesh\\Downloads\\chromedriver_win32\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "C:\\Users\\Harsh Kolhe\\Downloads\\chromedriver_win32\\chromedriver.exe");
 			driver=new ChromeDriver();
 			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 			//open applicdation
